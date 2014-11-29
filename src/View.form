@@ -459,6 +459,7 @@
         <Component class="javax.swing.JTextField" name="raceField">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="classLabel">
@@ -472,6 +473,7 @@
         <Component class="javax.swing.JTextField" name="classField">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JCheckBox" name="femaleCheckbox">
@@ -497,6 +499,7 @@
         <Component class="javax.swing.JTextField" name="levelField">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="levelLabel">
@@ -510,6 +513,7 @@
         <Component class="javax.swing.JTextField" name="achievementField">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="achievementLabel">
@@ -523,6 +527,7 @@
         <Component class="javax.swing.JTextField" name="guildField">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="guildLabel">
@@ -536,6 +541,7 @@
         <Component class="javax.swing.JTextField" name="battlegroupField">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="battlegroupLabel">
@@ -549,6 +555,7 @@
         <Component class="javax.swing.JTextField" name="killsField">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="killsLabel">

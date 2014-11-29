@@ -152,42 +152,50 @@ public class Handler {
      * @param toSet The integer representation of the class.
      * @return Returns the String representation of the class.
      */
-    public String setCharacterClass(int toSet) {
+    public String setCharacterClass(String toSet) {
         switch (toSet) {
-            default:
+            case "z":
+            case "Z":
                 characterClass = "Warrior";
                 break;
-            case 1:
-                characterClass = "Warrior";
-                break;
-            case 2:
+            case "B":
+            case "b":
                 characterClass = "Paladin";
                 break;
-            case 3:
+            case "y":
+            case "Y":
                 characterClass = "Hunter";
                 break;
-            case 4:
+            case "C":
+            case "c":
                 characterClass = "Rogue";
                 break;
-            case 5:
+            case "x":
+            case "X":
                 characterClass = "Priest";
                 break;
-            case 6:
+            case "D":
+            case "d":
                 characterClass = "Death Knight";
                 break;
-            case 7:
+            case "w":
+            case "W":
                 characterClass = "Shaman";
                 break;
-            case 8:
+            case "E":
+            case "e":
                 characterClass = "Mage";
                 break;
-            case 9:
+            case "v":
+            case "V":
                 characterClass = "Warlock";
                 break;
-            case 10:
+            case "F":
+            case "f":
                 characterClass = "Monk";
                 break;
-            case 11:
+            case "u":
+            case "U":
                 characterClass = "Druid";
                 break;
         }

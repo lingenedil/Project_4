@@ -73,11 +73,13 @@ public class View extends javax.swing.JFrame {
         raceLabel.setToolTipText("");
 
         raceField.setEditable(false);
+        raceField.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         classLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         classLabel.setText("Class:");
 
         classField.setEditable(false);
+        classField.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         femaleCheckbox.setText("Female");
         femaleCheckbox.setEnabled(false);
@@ -89,26 +91,31 @@ public class View extends javax.swing.JFrame {
         genderLabel.setText("Gender:");
 
         levelField.setEditable(false);
+        levelField.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         levelLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         levelLabel.setText("Level:");
 
         achievementField.setEditable(false);
+        achievementField.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         achievementLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         achievementLabel.setText("Achievement Points:");
 
         guildField.setEditable(false);
+        guildField.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         guildLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         guildLabel.setText("Guild:");
 
         battlegroupField.setEditable(false);
+        battlegroupField.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         battlegroupLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         battlegroupLabel.setText("Battlegroup:");
 
         killsField.setEditable(false);
+        killsField.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         killsLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         killsLabel.setText("Honorable Kills:");
@@ -265,11 +272,7 @@ public class View extends javax.swing.JFrame {
             JSONObject character = search.search(handler.getUrl());
             JSONObject guild = (JSONObject)(character.get("guild")); 
             
-            /**
-             * This is where I've run into issues; the class is only coming back as null despite it being correctly set in the API.
-             */
-            System.out.println("Class: " + character.get("class"));
-            // handler.setCharacterClass((int) character.get("class"));
+            handler.setCharacterClass((String) character.get("calcClass"));
             handler.setRace((int) character.get("race"));
             handler.setGender((int) character.get("gender"));
             handler.setLevel((int) character.get("level"));
@@ -278,6 +281,7 @@ public class View extends javax.swing.JFrame {
             handler.setBattlegroup((String) character.get("battlegroup"));
             handler.setKills((int) character.get("totalHonorableKills"));
             
+            classField.setText(handler.getCharacterClass());
             raceField.setText(handler.getRace());
             
             if (handler.getGender() == false)
